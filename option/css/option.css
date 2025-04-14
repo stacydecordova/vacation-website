@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "Tropical";
+  src: url("../fonts/Tropical.ttf"); /* Optional if you have one */
+}
+
+body {
+  font-family: "Tropical", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #cceeff, #ffffff);
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: rgb(0, 128, 128);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: teal;
+  margin: 0;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+/* Horizontal scrolling gallery */
+.horizontal-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px;
+}
+
+.horizontal-scroll img {
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  filter: brightness(0.95);
+}
+
+/* Attribute selector */
+a[href^="https"] {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Structural pseudo-class */
+ul li:last-child {
+  color: darkgreen;
+}
+
+/* Multi-column layout */
+#about {
+  column-count: 2;
+  column-gap: 30px;
+  padding: 15px;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
